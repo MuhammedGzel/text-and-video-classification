@@ -51,14 +51,14 @@ When addressing video classification, we worked with a subset of 25 classes from
 To facilitate the utilization of our trained models, we designed a user-friendly interface using PyQt5. This interface enables users to interact with our models seamlessly, making class predictions for various types of input data including audio, video, and text.
 
 Additionally, our interface supports audio and video files for text classification tasks, further enhancing the versatility and usability of our solution. Users can intuitively provide input data through the interface and receive accurate predictions from our deep learning models.
-
-
 <br />
 <br />
-
 <img src=https://github.com/MuhammedGzel/text-and-video-classification/blob/master/images/video_classification_screen.png width="850" height="500">
 <br />
 <img src=https://github.com/MuhammedGzel/text-and-video-classification/blob/master/images/text_classification_from_text_screen.png width="850" height="500">
 <br />
 <img src=https://github.com/MuhammedGzel/text-and-video-classification/blob/master/images/text_classification_from_media_screen.png width="850" height="500">
+
+## Licence
+This project is licensed under the [MIT License](LICENSE).
 
