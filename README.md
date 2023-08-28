@@ -42,13 +42,10 @@ Additionally, our interface supports audio and video files for text classificati
 
 <br />
 <br />
-<img src=https://github.com/MuhammedGzel/text-and-video-classification/blob/master/images/video_classification_screen.png>
-![alt](https://github.com/MuhammedGzel/text-and-video-classification/blob/master/images/video_classification_from_video_file_screen.jpg)
 
+<img src=https://github.com/MuhammedGzel/text-and-video-classification/blob/master/images/video_classification_screen.png width="970" height="640">
 <br />
-
-![alt](https://github.com/MuhammedGzel/text-and-video-classification/blob/master/images/text_classification_from_text_screen.jpg)
-
+<img src=https://github.com/MuhammedGzel/text-and-video-classification/blob/master/images/text_classification_from_text_screen.png width="970" height="640">
 <br />
+<img src=https://github.com/MuhammedGzel/text-and-video-classification/blob/master/images/text_classification_from_media_screen.png width="970" height="640">
 
-![alt](https://github.com/MuhammedGzel/text-and-video-classification/blob/master/video_classification_from_video_file_screen.jpg)
