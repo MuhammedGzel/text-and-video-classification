@@ -34,6 +34,23 @@ In this project, we explore the application of deep learning techniques for auto
 - SpeechRecognition==3.10.0
 - tensorflow==2.10.0
 
+## Installation
+
+Follow these steps to set up the project.
+
+1. **Clone the repository:**
+
+    ```
+    git clone https://github.com/MuhammedGzel/text-and-video-classification.git
+    cd text-and-video-classification
+    ```
+
+2. **Install project dependencies:**
+
+    ```
+    pip install -r requirements.txt
+    ```
+
 ## Usage
 **Start the application:**
     ```
