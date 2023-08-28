@@ -82,5 +82,5 @@ Additionally, our interface supports audio and video files for text classificati
 <img src=https://github.com/MuhammedGzel/text-and-video-classification/blob/master/images/text_classification_from_media_screen.png width="850" height="500">
 
 ## Licence
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE.md).
 
