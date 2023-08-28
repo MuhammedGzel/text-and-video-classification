@@ -1,1 +1,1035 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>970</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>970</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>970</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial,Helvetica,sans-serif</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>AI Classification Tool</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>images/window_icon.png</normaloff>images/window_icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgb(255, 255, 255);
+background-image: url(GUI/images/bg_image.png);
+font-family: Arial, Helvetica, sans-serif;
 
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="font">
+    <font>
+     <family>Arial,Helvetica,sans-serif</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: rgba(0, 0, 0, 0);</string>
+   </property>
+   <widget class="QFrame" name="select_classification_type_frame">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>230</width>
+      <height>700</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0, 0, 0, 40);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QRadioButton" name="video_classification_from_video_file_button">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>90</y>
+       <width>180</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial,Helvetica,sans-serif</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QRadioButton {
+	
+    color: #ffffff;
+    background-color: rgb(63, 112, 204,50);
+    border: 2px solid rgb(63, 112, 204,50);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+QRadioButton::indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 7px;
+}
+
+QRadioButton::indicator::checked {
+    background-color: rgb(63, 112, 204);
+    border: 2px solid rgb(63, 112, 204);
+}</string>
+     </property>
+     <property name="text">
+      <string>From Video File</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="text_classification_from_text_button">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>215</y>
+       <width>180</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial,Helvetica,sans-serif</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QRadioButton {
+	
+    color: #ffffff;
+    background-color: rgb(63, 112, 204,50);
+    border: 2px solid rgb(63, 112, 204,50);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+QRadioButton::indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 7px;
+}
+
+QRadioButton::indicator::checked {
+    background-color: rgb(63, 112, 204);
+    border: 2px solid rgb(63, 112, 204);
+}</string>
+     </property>
+     <property name="text">
+      <string>From Text</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="category1">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>25</y>
+       <width>230</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial,Helvetica,sans-serif</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+background-color:rgb(85, 85, 255,100);
+padding-left:10px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Video Classification</string>
+     </property>
+     <property name="margin">
+      <number>10</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="category2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>150</y>
+       <width>230</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial,Helvetica,sans-serif</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+background-color:rgb(85, 85, 255,100);
+padding-left:10px;
+}
+
+</string>
+     </property>
+     <property name="text">
+      <string>Text Classification</string>
+     </property>
+     <property name="margin">
+      <number>10</number>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="text_classification_from_media_file_button">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>260</y>
+       <width>180</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial,Helvetica,sans-serif</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QRadioButton {
+	
+    color: #ffffff;
+    background-color: rgb(63, 112, 204,50);
+    border: 2px solid rgb(63, 112, 204,50);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+QRadioButton::indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 7px;
+}
+
+QRadioButton::indicator::checked {
+    background-color: rgb(63, 112, 204);
+    border: 2px solid rgb(63, 112, 204);
+}</string>
+     </property>
+     <property name="text">
+      <string>From Media File</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPlainTextEdit" name="plain_text_area">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>70</y>
+      <width>640</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial,Helvetica,sans-serif</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">padding:20px;
+background-color: rgba(0, 0, 0, 100);
+border:2px solid rgb(85, 85, 255);
+border-radius:5px</string>
+    </property>
+    <property name="plainText">
+     <string/>
+    </property>
+    <property name="backgroundVisible">
+     <bool>false</bool>
+    </property>
+    <property name="centerOnScroll">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="classification_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>550</y>
+      <width>638</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QPushButton" name="classify_button">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>111</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial,Helvetica,sans-serif</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+ background-color: rgb(63, 112, 204,50);
+ border: 2px solid rgb(63, 112, 204,50);
+ border-radius: 10px;
+}
+
+QPushButton:hover{
+ background-color:rgb(85, 85, 255);}</string>
+     </property>
+     <property name="text">
+      <string>Classify</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="predicted_class_label">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>0</y>
+       <width>517</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial,Helvetica,sans-serif</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="media_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>70</y>
+      <width>640</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial,Helvetica,sans-serif</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QSlider" name="media_playing_slider">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>65</x>
+       <y>365</y>
+       <width>501</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QSlider::groove:horizontal {
+     background: white;
+     height: 6px;
+ }
+            
+QSlider::handle:horizontal {
+     background:rgb(0, 85, 255);
+ 	 width: 14px;
+     margin-top: -4px;
+     margin-bottom: -4px;
+     border-radius: 6px;
+}</string>
+     </property>
+     <property name="maximum">
+      <number>1000</number>
+     </property>
+     <property name="pageStep">
+      <number>10</number>
+     </property>
+     <property name="tracking">
+      <bool>true</bool>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="tickPosition">
+      <enum>QSlider::NoTicks</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="media_total_time_label">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>365</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial,Helvetica,sans-serif</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>0:00:00</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="media_elapsed_time_label">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>365</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial,Helvetica,sans-serif</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string> 0:00:00</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="play_pause_media_button">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>390</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>15</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover{
+background-color:rgb(85, 85, 255);}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>images/play_media.png</normaloff>images/play_media.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="stop_media_button">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>390</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>15</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover{
+background-color:rgb(85, 85, 255);}
+
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>images/stop_media.png</normaloff>images/stop_media.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="replay_media_button">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>390</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover{
+background-color:rgb(85, 85, 255);}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>images/replay_media.png</normaloff>images/replay_media.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="mute_unmute_media_button">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>390</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover{
+background-color:rgb(85, 85, 255);}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>images/unmute_media.png</normaloff>images/unmute_media.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="select_media_button">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>430</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial,Helvetica,sans-serif</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string extracomment="Select a new media"/>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+ background-color: rgb(63, 112, 204,50);
+ border: 2px solid rgb(63, 112, 204,50);
+ border-radius: 10px;
+}
+
+QPushButton:hover{
+ background-color:rgb(85, 85, 255);}</string>
+     </property>
+     <property name="text">
+      <string>Select Media</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="media_path_label">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>430</y>
+       <width>521</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial,Helvetica,sans-serif</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(0, 0, 0,0);
+</string>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QFrame" name="media_screen_frame">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>640</width>
+       <height>360</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial,Helvetica,sans-serif</family>
+       <pointsize>10</pointsize>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QPlainTextEdit" name="media_text_area">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>250</y>
+       <width>600</width>
+       <height>100</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial,Helvetica,sans-serif</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: rgba(0, 0, 0, 0.5);
+border:2px solid rgb(85, 85, 255);
+font-size:10pt;
+text-align: justify;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="plainText">
+      <string/>
+     </property>
+     <property name="isVisible" stdset="0">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="show_hide_media_text_checkbox">
+     <property name="geometry">
+      <rect>
+       <x>625</x>
+       <y>250</y>
+       <width>15</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <property name="tristate">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QSlider" name="control_media_volume_slider">
+     <property name="geometry">
+      <rect>
+       <x>539</x>
+       <y>390</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QSlider::groove:horizontal {
+     background: white;
+     height: 6px;
+ }
+            
+QSlider::handle:horizontal {
+     background:rgb(0, 85, 255);
+ 	 width: 14px;
+     margin-top: -4px;
+     margin-bottom: -4px;
+     border-radius: 6px;
+}
+
+</string>
+     </property>
+     <property name="maximum">
+      <number>100</number>
+     </property>
+     <property name="sliderPosition">
+      <number>50</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="volume_level_label">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>390</y>
+       <width>35</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial,Helvetica,sans-serif</family>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>100%</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="rewind_media_10s_button">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>390</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>15</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover{
+background-color:rgb(85, 85, 255);}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>images/backward_media_10.png</normaloff>images/backward_media_10.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="forward_media_10s_button">
+     <property name="geometry">
+      <rect>
+       <x>75</x>
+       <y>390</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>15</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover{
+background-color:rgb(85, 85, 255);}
+
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>images/forward_media_10.png</normaloff>images/forward_media_10.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="select_model_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>20</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="setVisible" stdset="0">
+     <bool>false</bool>
+    </property>
+    <widget class="QRadioButton" name="model1_button">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial,Helvetica,sans-serif</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QRadioButton {
+	
+    color: #ffffff;
+    background-color: rgb(63, 112, 204,50);
+    border: 2px solid rgb(63, 112, 204,50);
+    border-radius: 10px;
+    padding: 5px;
+	
+}
+
+QRadioButton::indicator {
+    width: 0px;
+    height: 0px;
+    border-radius: 7px;
+}
+QRadioButton::checked {
+    background-color: rgb(63, 112, 204,230);
+    border: 2px solid rgb(63, 112, 204,200);
+}
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>3D CNN</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="model2_button">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>0</y>
+       <width>160</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial,Helvetica,sans-serif</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QRadioButton {
+	
+    color: #ffffff;
+    background-color: rgb(63, 112, 204,50);
+    border: 2px solid rgb(63, 112, 204,50);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+QRadioButton::indicator {
+    width: 0px;
+    height: 0px;
+    border-radius: 7px;
+}
+QRadioButton::checked {
+    background-color: rgb(63, 112, 204,230);
+    border: 2px solid rgb(63, 112, 204,200);
+}
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>Bidirectional LSTM</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="classification_type">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>25</y>
+      <width>381</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial,Helvetica,sans-serif</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Select the classification type from the left panel.</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
