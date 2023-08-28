@@ -36,7 +36,7 @@ In this project, we explore the application of deep learning techniques for auto
 
 ## Usage
 **Start the application:**
-    ```sh
+    ```
     python main.py
     ```
 
