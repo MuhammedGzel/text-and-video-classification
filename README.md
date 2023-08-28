@@ -34,6 +34,7 @@ Additionally, our interface supports audio and video files for text classificati
 <img src=https://github.com/MuhammedGzel/text-and-video-classification/blob/master/images/text_classification_from_media_screen.png width="850" height="500">
 
 ## Requirements
+- Python==3.9
 - CUDA==11.8
 - cuDNN==8.6.0
 - keras==2.10.0
