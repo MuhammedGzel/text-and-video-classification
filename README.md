@@ -27,4 +27,17 @@ For addressing the text classification challenge, we employed two distinct model
 
 In the realm of video classification, we developed two different models: a 3D Convolutional Neural Network (CNN) and a combination of 2D CNN followed by an LSTM layer. The 3D CNN focuses on analyzing spatiotemporal features within video frames, while the 2D CNN + LSTM architecture effectively captures the temporal patterns and dependencies within video sequences.
 
+
+# Datasets Used
+For training our text classification models, we utilized the TC32 dataset. This dataset offers a diverse range of textual data, enabling us to develop models that can effectively categorize text inputs into relevant classes.
+
+When addressing video classification, we worked with a subset of 25 classes from the UCF-101 dataset. This subset was chosen to streamline the training process and ensure efficient model development. The UCF-101 dataset is renowned for its broad collection of action videos, which serve as a suitable foundation for our video classification tasks.
+
+
+# User Interface Development
+To facilitate the utilization of our trained models, we designed a user-friendly interface using PyQt5. This interface enables users to interact with our models seamlessly, making class predictions for various types of input data including audio, video, and text.
+
+Additionally, our interface supports audio and video files for text classification tasks, further enhancing the versatility and usability of our solution. Users can intuitively provide input data through the interface and receive accurate predictions from our deep learning models.
+
+
 ![alt](https://github.com/MuhammedGzel/stack-data-structure-applet-visualization/blob/main/app_screenshot.png)
