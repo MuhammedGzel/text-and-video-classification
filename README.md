@@ -2,7 +2,7 @@
 In this project, we explore the application of deep learning techniques for automating the classification of both textual and video data. Leveraging the power of deep neural networks, we aim to create models that can accurately predict the categories of given text and video inputs.
 
 ## Table of Contents
-- [Deep Learning Models](## Deep Learning Models)
+- [Deep Learning Models](#Deep Learning Models)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
