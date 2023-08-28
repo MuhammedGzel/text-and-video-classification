@@ -40,4 +40,5 @@ To facilitate the utilization of our trained models, we designed a user-friendly
 Additionally, our interface supports audio and video files for text classification tasks, further enhancing the versatility and usability of our solution. Users can intuitively provide input data through the interface and receive accurate predictions from our deep learning models.
 
 
+####
 ![alt](https://github.com/MuhammedGzel/text-and-video-classification/blob/master/video_classification_from_video_file_screen.jpg)
