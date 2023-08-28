@@ -1,7 +1,6 @@
 import sys
 from datetime import timedelta
 from multiprocessing import Process, Queue
-from time import sleep
 import vlc
 from PyQt5.QtCore import QTimer
 from PyQt5.QtGui import QIcon
@@ -23,7 +22,7 @@ def show_message(msg_type, title, text):
         msg_box.setIcon(QMessageBox.Question)
         msg_box.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
         msg_box.setDefaultButton(QMessageBox.No)
-    # msg_box.setWindowIcon(QIcon("GUI/images/firat_logo.png"))
+    msg_box.setWindowIcon(QIcon("GUI/images/window_icon.png"))
     msg_box.setWindowTitle(title)
     msg_box.setText(text)
     return msg_box.exec_()
@@ -326,8 +325,8 @@ class MainWindow(QMainWindow):
     def closeEvent(self, event):
         ques = show_message("question", "Close Program", "Are you sure you want to close the program?")
         if ques == QMessageBox.Yes:
-            self.stop_all_operations()
-            event.accept()
+            self.stop_process()
+            sys.exit()
         else:
             event.ignore()
 
