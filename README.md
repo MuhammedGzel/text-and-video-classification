@@ -72,7 +72,7 @@ Follow these steps to set up the project.
     
     Download trained models from [this link](https://drive.google.com/drive/folders/18BHBPTxCNlpPwCdpjxTVlM6yjbFaSGuw?usp=sharing)
     
-    After the download is complete; copy the networks folder from the text_classification folder into the text_classification folder in the project root directory and copy    
+    After the download is complete; copy the networks folder from the text_classification folder into the text_classification folder in the project root directory and copy   
     the networks folder from the video_classification folder into the video_classification folder in the project root directory.
 
 ## Usage
