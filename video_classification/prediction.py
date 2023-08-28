@@ -1,4 +1,3 @@
-import os
 from collections import Counter
 from math import ceil
 from keras.models import load_model
