@@ -50,7 +50,6 @@ Follow these steps to set up the project.
     ```
     nvcc --version
     ```
-
     This should display the version information of CUDA.
    
 
