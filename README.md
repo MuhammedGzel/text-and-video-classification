@@ -3,6 +3,8 @@ In this project, we explore the application of deep learning techniques for auto
 
 ## Table of Contents
 - [Deep Learning Models](#deep-learning-models)
+- [Dataset Used](#dataset-used)
+- [User Interface Development](#user-interface-development)
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
