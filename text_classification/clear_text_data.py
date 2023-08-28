@@ -1,7 +1,6 @@
 from nltk.corpus import stopwords
 from nltk import word_tokenize
 import re
-import sys
 
 
 def clear_devamini_oku(text):

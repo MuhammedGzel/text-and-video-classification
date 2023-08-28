@@ -1,5 +1,4 @@
 import mimetypes
-from time import sleep
 import numpy as np
 import moviepy.editor as mp
 import os
