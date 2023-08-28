@@ -34,6 +34,11 @@ In this project, we explore the application of deep learning techniques for auto
 - SpeechRecognition==3.10.0
 - tensorflow==2.10.0
 
+## Usage
+**Start the application:**
+    ```sh
+    python main.py
+    ```
 
 ## Deep Learning Models
 For addressing the text classification challenge, we employed two distinct models: Long Short-Term Memory (LSTM) and Bidirectional LSTM. These models have demonstrated their efficacy in capturing the sequential patterns and contextual information present in textual data, thus enhancing our classification capabilities.
