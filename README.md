@@ -1,7 +1,5 @@
-# text-and-video-classification
-Deep learning models have been trained to perform text and video classification tasks automatically. For both classification problems, two distinct models have been trained. For text classification, LSTM and bidirectional LSTM models have been trained, while for video classification, 3D CNN and 2D CNN+LSTM models have been employed. The TC32 dataset has been used for training the text classification models, and for video classification training, a subset of 25 classes from the UCF-101 dataset has been utilized. 
-
-In addition, an interface using PyQt5 has been developed for class prediction operations using the trained models. Through this interface, text classification tasks can also be conducted using audio and video files.
+# Introduction
+In this project, we explore the application of deep learning techniques for automating the classification of both textual and video data. Leveraging the power of deep neural networks, we aim to create models that can accurately predict the categories of given text and video inputs.
 
 # Requirements
 - keras==2.10.0
@@ -24,7 +22,9 @@ In addition, an interface using PyQt5 has been developed for class prediction op
 - tensorflow==2.10.0
 
 
-# Usage
-- Download repo and just run "StackApplet.java", application will run.
+# Deep Learning Models
+For addressing the text classification challenge, we employed two distinct models: Long Short-Term Memory (LSTM) and Bidirectional LSTM. These models have demonstrated their efficacy in capturing the sequential patterns and contextual information present in textual data, thus enhancing our classification capabilities.
+
+In the realm of video classification, we developed two different models: a 3D Convolutional Neural Network (CNN) and a combination of 2D CNN followed by an LSTM layer. The 3D CNN focuses on analyzing spatiotemporal features within video frames, while the 2D CNN + LSTM architecture effectively captures the temporal patterns and dependencies within video sequences.
 
 ![alt](https://github.com/MuhammedGzel/stack-data-structure-applet-visualization/blob/main/app_screenshot.png)
