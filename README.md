@@ -11,6 +11,27 @@ In this project, we explore the application of deep learning techniques for auto
 - [Contributing](#contributing)
 - [License](#license)
 
+## Deep Learning Models
+For addressing the text classification challenge, we employed two distinct models: Long Short-Term Memory (LSTM) and Bidirectional LSTM. These models have demonstrated their efficacy in capturing the sequential patterns and contextual information present in textual data, thus enhancing our classification capabilities.
+
+In the realm of video classification, we developed two different models: a 3D Convolutional Neural Network (CNN) and a combination of 2D CNN followed by an LSTM layer. The 3D CNN focuses on analyzing spatiotemporal features within video frames, while the 2D CNN + LSTM architecture effectively captures the temporal patterns and dependencies within video sequences.
+
+## Datasets Used
+For training our text classification models, we utilized the TC32 dataset. This dataset offers a diverse range of textual data, enabling us to develop models that can effectively categorize text inputs into relevant classes.
+
+When addressing video classification, we worked with a subset of 25 classes from the UCF-101 dataset. This subset was chosen to streamline the training process and ensure efficient model development. The UCF-101 dataset is renowned for its broad collection of action videos, which serve as a suitable foundation for our video classification tasks.
+
+## User Interface Development
+To facilitate the utilization of our trained models, we designed a user-friendly interface using PyQt5. This interface enables users to interact with our models seamlessly, making class predictions for various types of input data including audio, video, and text.
+
+Additionally, our interface supports audio and video files for text classification tasks, further enhancing the versatility and usability of our solution. Users can intuitively provide input data through the interface and receive accurate predictions from our deep learning models.
+<br />
+<br />
+<img src=https://github.com/MuhammedGzel/text-and-video-classification/blob/master/images/video_classification_screen.png width="850" height="500">
+<br />
+<img src=https://github.com/MuhammedGzel/text-and-video-classification/blob/master/images/text_classification_from_text_screen.png width="850" height="500">
+<br />
+<img src=https://github.com/MuhammedGzel/text-and-video-classification/blob/master/images/text_classification_from_media_screen.png width="850" height="500">
 
 ## Requirements
 - CUDA==11.8
@@ -77,34 +98,11 @@ Follow these steps to set up the project.
 
 ## Usage
 **Start the application:**
+
     ```
     python main.py
     ```
-
-## Deep Learning Models
-For addressing the text classification challenge, we employed two distinct models: Long Short-Term Memory (LSTM) and Bidirectional LSTM. These models have demonstrated their efficacy in capturing the sequential patterns and contextual information present in textual data, thus enhancing our classification capabilities.
-
-In the realm of video classification, we developed two different models: a 3D Convolutional Neural Network (CNN) and a combination of 2D CNN followed by an LSTM layer. The 3D CNN focuses on analyzing spatiotemporal features within video frames, while the 2D CNN + LSTM architecture effectively captures the temporal patterns and dependencies within video sequences.
-
-
-## Datasets Used
-For training our text classification models, we utilized the TC32 dataset. This dataset offers a diverse range of textual data, enabling us to develop models that can effectively categorize text inputs into relevant classes.
-
-When addressing video classification, we worked with a subset of 25 classes from the UCF-101 dataset. This subset was chosen to streamline the training process and ensure efficient model development. The UCF-101 dataset is renowned for its broad collection of action videos, which serve as a suitable foundation for our video classification tasks.
-
-
-## User Interface Development
-To facilitate the utilization of our trained models, we designed a user-friendly interface using PyQt5. This interface enables users to interact with our models seamlessly, making class predictions for various types of input data including audio, video, and text.
-
-Additionally, our interface supports audio and video files for text classification tasks, further enhancing the versatility and usability of our solution. Users can intuitively provide input data through the interface and receive accurate predictions from our deep learning models.
-<br />
-<br />
-<img src=https://github.com/MuhammedGzel/text-and-video-classification/blob/master/images/video_classification_screen.png width="850" height="500">
-<br />
-<img src=https://github.com/MuhammedGzel/text-and-video-classification/blob/master/images/text_classification_from_text_screen.png width="850" height="500">
-<br />
-<img src=https://github.com/MuhammedGzel/text-and-video-classification/blob/master/images/text_classification_from_media_screen.png width="850" height="500">
-
+    
 ## Licence
 This project is licensed under the [MIT License](LICENSE.md).
 
