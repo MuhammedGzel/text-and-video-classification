@@ -1,7 +1,9 @@
 # Introduction
 In this project, we explore the application of deep learning techniques for automating the classification of both textual and video data. Leveraging the power of deep neural networks, we aim to create models that can accurately predict the categories of given text and video inputs.
 
-# Requirements
+## Requirements
+- CUDA==11.8
+- cuDNN==8.6.0
 - keras==2.10.0
 - keras_nightly==2.5.0.dev2021032900
 - Keras_Preprocessing==1.1.2
