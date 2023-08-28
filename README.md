@@ -43,7 +43,7 @@ Follow these steps to set up the project.
     Visit the [CUDA Toolkit Archive page](https://developer.nvidia.com/cuda-toolkit-archive) and download CUDA v11.8. Follow the installation instructions provided by NVIDIA 
     to set up CUDA on your system.
 
-3. **Verify CUDA installation:**
+2. **Verify CUDA installation:**
    
     Open a terminal and run the following command to verify that CUDA is installed:
     ```
@@ -51,30 +51,29 @@ Follow these steps to set up the project.
     ```
     This should display the version information of CUDA.
    
-4. **Download and copy CUDNN v8.6.0:**
+3. **Download and copy CUDNN v8.6.0:**
    
     Download CUDNN v8.6.0 from [this link](https://developer.nvidia.com/cudnn) and go to the directory where CUDA is installed and copy the files from the archive.
 
-6. **Clone the repository:**
+4. **Clone the repository:**
    
     ```
     git clone https://github.com/MuhammedGzel/text-and-video-classification.git
     cd text-and-video-classification
     ```
 
-8. **Install project dependencies:**
+5. **Install project dependencies:**
    
     ```
     pip install -r requirements.txt
     ```
 
-10. **Download our trained models:**
+6. **Download our trained models:**
     
     Download trained models from [this link](https://drive.google.com/drive/folders/18BHBPTxCNlpPwCdpjxTVlM6yjbFaSGuw?usp=sharing)
     
-    Copy the networks folder in the text_classification folder into the text_classification folder in the project root directory and copy the networks folder in the 
-    video_classification folder into the video_classification folder in the project root directory.
-
+    After the download is complete; copy the networks folder from the text_classification folder into the text_classification folder in the project root directory and copy    
+    the networks folder from the video_classification folder into the video_classification folder in the project root directory.
 
 ## Usage
 **Start the application:**
