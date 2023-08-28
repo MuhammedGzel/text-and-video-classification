@@ -1,5 +1,6 @@
 # text-and-video-classification
 Deep learning models have been trained to perform text and video classification tasks automatically. For both classification problems, two distinct models have been trained. For text classification, LSTM and bidirectional LSTM models have been trained, while for video classification, 3D CNN and 2D CNN+LSTM models have been employed. The TC32 dataset has been used for training the text classification models, and for video classification training, a subset of 25 classes from the UCF-101 dataset has been utilized. 
+
 In addition, an interface using PyQt5 has been developed for class prediction operations using the trained models. Through this interface, text classification tasks can also be conducted using audio and video files.
 
 # Requirements
