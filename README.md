@@ -38,7 +38,22 @@ In this project, we explore the application of deep learning techniques for auto
 
 Follow these steps to set up the project.
 
-1. **Clone the repository:**
+1. **Download and Install CUDA v11.8:**
+
+    Visit the [CUDA Toolkit Archive page](https://developer.nvidia.com/cuda-toolkit-archive) and download CUDA v11.8. Follow the installation instructions provided by NVIDIA 
+    to set up CUDA on your system.
+
+2. **Verify CUDA Installation:**
+
+    Open a terminal and run the following command to verify that CUDA is installed:
+
+    ```
+    nvcc --version
+    ```
+
+    This should display the version information of CUDA.
+
+3. **Clone the repository:**
 
     ```
     git clone https://github.com/MuhammedGzel/text-and-video-classification.git
