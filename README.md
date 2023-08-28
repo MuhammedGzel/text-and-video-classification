@@ -52,15 +52,22 @@ Follow these steps to set up the project.
     ```
 
     This should display the version information of CUDA.
+   
 
-3. **Clone the repository:**
+2. **Download and copy CUDNN library:**
+
+    Download the CUDNN library from [this link](https://developer.nvidia.com/cudnn) and copy the necessary files to the appropriate CUDA directories.
+   
+
+4. **Clone the repository:**
 
     ```
     git clone https://github.com/MuhammedGzel/text-and-video-classification.git
     cd text-and-video-classification
     ```
 
-2. **Install project dependencies:**
+
+5. **Install project dependencies:**
 
     ```
     pip install -r requirements.txt
