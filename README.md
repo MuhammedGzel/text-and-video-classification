@@ -97,7 +97,7 @@ Follow these steps to set up the project.
     the networks folder from the video_classification folder into the video_classification folder in the project root directory.
 
 ## Usage
-**Start the application:**
+    **Start the application:**
 
     ```
     python main.py
