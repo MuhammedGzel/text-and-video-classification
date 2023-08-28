@@ -1,5 +1,7 @@
 # text-and-video-classification
-It is a Java Applet application that provides a better understanding of the stack data structure, which uses the array data structure in the background. It allows animating operations such as adding data to the stack, removing data and showing the top data. A screenshot of the application interface and the requirements for the application to run are given below.
+Deep learning models have been trained to automatically perform text and video classification tasks using deep learning techniques. Two distinct models were trained for each classification problem. For text classification, LSTM and Bidirectional LSTM models were employed, while for video classification, 3D CNN and 2D CNN+LSTM models were utilized. The TC32 dataset was employed for training the text classification models, whereas a subset of 25 classes from the UCF-101 dataset was used for training the video classification models.
+
+Moreover, a PyQt5 interface has been developed to facilitate class prediction tasks using the trained models. This interface also enables text classification using audio and video files.
 
 # Requirements
 - Java versions 8 or below are required for this application to work.
