@@ -47,7 +47,7 @@ Additionally, our interface supports audio and video files for text classificati
 
 <br />
 
-![alt](https://github.com/MuhammedGzel/text-and-video-classification/blob/master/video_classification_from_video_file_screen.jpg)
+![alt](https://github.com/MuhammedGzel/text-and-video-classification/blob/master/images/text_classification_from_text_screen.jpg)
 
 <br />
 
