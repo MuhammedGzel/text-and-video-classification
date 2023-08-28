@@ -3,6 +3,7 @@ In this project, we explore the application of deep learning techniques for auto
 
 ## Table of Contents
 - [Deep Learning Models](#Deep Learning Models)
+- [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
