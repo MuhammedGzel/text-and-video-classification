@@ -75,7 +75,7 @@ Follow these steps to set up the project.
    
 3. **Download and copy CUDNN v8.6.0:**
    
-    Download CUDNN v8.6.0 from [this link](https://developer.nvidia.com/cudnn) and go to the directory where CUDA is installed and copy the files from the archive.
+    Download CUDNN v8.6.0 from [this link](https://developer.nvidia.com/rdp/cudnn-archive) and go to the directory where CUDA is installed and copy the files from the archive.
 
 4. **Clone the repository:**
    
